@@ -7,7 +7,20 @@
         border-top: 1px solid #e5e5e5;
         text-align: center;
     }
-    h3{
+    h3,h4,h5{
         color: #848484;
     }
+	
+	/* Ordered list structure */
+	.tree{
+		counter-reset: item; 
+		padding-left: 10px;
+	}
+	.tree-list{
+		display: block;
+	}
+	.tree-list:before{
+		content: counters(item, ".") " ";
+		counter-increment: item;
+	}
 }
