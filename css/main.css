@@ -1,0 +1,13 @@
+@media screen{
+	/* Custom page footer */
+    .footer {
+        padding-top: 19px;
+        margin-top: 70px;
+        color: #777;
+        border-top: 1px solid #e5e5e5;
+        text-align: center;
+    }
+    h3{
+        color: #848484;
+    }
+}
