@@ -23,4 +23,10 @@
 		content: counters(item, ".") " ";
 		counter-increment: item;
 	}
+	.scrollToTop{
+		position: fixed;
+		right: 5px;
+		top: 60px;
+		display: none;
+	}
 }

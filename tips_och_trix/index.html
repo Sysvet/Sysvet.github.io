@@ -34,15 +34,15 @@
         Source: https://github.com/twbs/bootstrap/blob/master/LICENSE
         
         -->
-        <meta charset="ISO-8859-1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-        <!-- Custom CSS -->
+        <!-- Custom CSS and JS -->
         <link href="../css/main.css" rel="stylesheet" type="text/css">
-    </head>
+	</head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
@@ -67,7 +67,10 @@
                 </div>
             </div>
         </nav>
-        
+        <!-- scrollToTop button -->
+		<div class="btn btn-primary scrollToTop">
+			<span class="glyphicon glyphicon-arrow-up"></span>
+		</div>
         <!-- jumbotron -->
         <div class="jumbotron">
             <div class="container">
@@ -82,13 +85,13 @@
         <div id="#index"></div>
             <p>
                 <ol class="tree">
-                    <li class="tree-list"><a href="#index">Index</a></li>
-                    <li class="tree-list"><a href="#netbeans">Netbeans</a>
+                    <li class="tree-list"><a href="#" onclick="scrollToId('index')">Index</a></li>
+                    <li class="tree-list"><a href="#" onclick="scrollToId('netbeans')">Netbeans</a>
 					<ol class="tree">
-						<li class="tree-list"><a href="#kortkommandon">Kortkommandon</a></li>
+						<li class="tree-list"><a href="#"  onclick="scrollToId('kortkommandon')">Kortkommandon</a></li>
 					</ol></li>
-                    <li class="tree-list"><a href="#wamp">WAMP Server</a></li>
-                    <li class="tree-list"><a href="#grnwebdev">Webutveckling</a></li>
+                    <li class="tree-list"><a href="#" onclick="scrollToId('wamp')">WAMP Server</a></li>
+                    <li class="tree-list"><a href="#" onclick="scrollToId('grnwebdev')">Webutveckling</a></li>
                 </ol>
             </p>
         </div>
@@ -110,10 +113,15 @@
 			<h4 id="kortkommandon">2.1 Kortkommandon</h4>
 			<ul>
 				<li>
-					<p>F&ouml;r att snabbt skriva ut: <br/>
-					<samp>System.out.println('')</samp><br/>
-					Skriv: <i>sout</i> + <kbd>TAB</kbd>. </p>
+					</p><i>sout</i> + <kbd>TAB</kbd><br/>
+					<samp>System.out.println("");</samp></p>
 				</li>
+				<br/>
+				<li>
+					<p>Auto-import: <kbd>CTRL + Spacebar</kbd><br/>
+					<i>Anv&ouml;nd detta direkt d&aring; du definerat en ny klass t.ex:</i><code>Random</code></p>
+				</li>
+				
 			</ul>
 			<p></p>
             <br/>
@@ -145,6 +153,8 @@
     <!-- later script loading for users delight -->
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-     <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<!-- The sites' own main js-file -->
+	<script src="../js/main.js"></script>
 </html>
