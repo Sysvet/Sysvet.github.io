@@ -29,4 +29,26 @@
 		top: 60px;
 		display: none;
 	}
+	.dark-bkg-container{
+		margin-top: -30px;
+		background: #333;
+		color: #fff;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 45px;
+		box-shadow: 0 2px 15px #222 inset,
+					0 -8px 15px -8px #222 inset;
+	}
+	.dark-bkg-container h3{
+		color: #eee;
+	}
+	/* custom LESS links */
+	.dark-bkg-container a{
+		color: #62ADC4;
+		text-decoration: none;
+	}
+	.dark-bkg-container a:hover{
+		color: #81DAF5;
+		text-decoration: underline;
+	}
 }
