@@ -29,6 +29,7 @@ $(document).ready(function(){
 
     //XML ACTIONS
     //read XML: ARTICLES & BOOKS
+	/*
     $.ajax({
         type: "GET",
         url: "data/articles.xml",
@@ -84,6 +85,7 @@ $(document).ready(function(){
         },
         fail: $('#extra').html("<tr class='danger'><td>N/A</td><td>N/A</td></tr>")
     });
+	*/
 
 });
 
