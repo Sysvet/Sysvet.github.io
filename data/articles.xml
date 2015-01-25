@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<articles>
+    <article>
+        <topic>
+            Agile Android Software Development
+        </topic>
+        <text>
+            This book teaches you how to turn your ideas into successful apps that everyone will talk about, love, and share.
+        </text>
+        <href>
+            https://www.agiledroid.com/#sthash.YsZ61Qjs.sfju
+        </href>
+    </article>
+    <article>
+        <topic>
+            Agile Project Management and Product Strategy - A Case Study
+        </topic>
+        <text>
+            En artikel om system och programutveckling och hur man anpassar sitt arbete efter Agila metoder.
+        </text>
+        <href>
+            http://ericbrown.com/agile-project-management-product-strategy-a-case-study.htm
+        </href>
+    </article>
+    <article>
+        <topic>
+            Introduction to the Diagrams of UML 2.X
+        </topic>
+        <text>
+            Understanding the thirteen diagrams of UML 2.x is an important part of understanding OO development. Although there is far more to modeling than just the UML the reality is the UML defines the standard modeling artifacts when it comes to object technology.
+        </text>
+        <href>
+            http://www.agilemodeling.com/essays/umlDiagrams.htm
+        </href>
+    </article>
+    <article>
+        <topic>
+            Agile Requirements Best Practices
+        </topic>
+        <text>
+            I believe that the term "contextual practice" makes far more sense because what is a "best practice" in some situations proves to be a "worst practice" in others. Having said that, people are interested in best practices so here they are when it comes to agile requirements modeling.
+        </text>
+        <href>
+            http://www.agilemodeling.com/essays/agileRequirementsBestPractices.htm
+        </href>
+    </article>
+    <article>
+        <topic>
+            Det Agila Manifestet
+        </topic>
+        <text>
+            Vi finner bättre sätt att utveckla programvara genom att utveckla själva och hjälpa andra att utveckla.
+        </text>
+        <href>
+            http://www.agilemanifesto.org/
+        </href>
+    </article>
+    <article>
+        <topic>
+            Model View Controller(MVC)
+        </topic>
+        <text>
+            How do you modularize the user interface functionality of a Web application so that you can easily modify the individual parts?
+        </text>
+        <href>
+            https://msdn.microsoft.com/en-us/library/ff649643.aspx
+        </href>
+    </article>
+    <article>
+        <topic>
+            Service-Oriented Architecture
+        </topic>
+        <text>
+            Gives a concise explanation of service-oriented architecture, what it is, and how it affects what architects, CIOs, project managers, business analysts, and lead developers do.
+        </text>
+        <href>
+            https://msdn.microsoft.com/en-us/library/aa480021.aspx
+        </href>
+    </article>
+</articles>

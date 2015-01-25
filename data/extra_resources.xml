@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<content>
+		<name>MS DreamSpark Gratis Program</name>
+		<href>http://onthehub.com/search/higher-ed/</href>
+		<linktext>http://e5.onthehub.com</linktext>
+	</content>
+	<content>
+		<name>Dropbox</name>
+		<href>https://www.dropbox.com/</href>
+		<linktext>https://www.dropbox.com/</linktext>
+	</content>
+	<content>
+		<name>Google Documents</name>
+		<href>https://docs.google.com</href>
+		<linktext>https://docs.google.com</linktext>
+	</content>
+</resources>
