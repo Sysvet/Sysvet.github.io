@@ -24,8 +24,8 @@ $(document).ready(function(){
     });
 
     //applying loading images from bootstrap to data GETs
-    $('#articles').html(loaderImage);
-    $('#extra').html(loaderImage);
+    //$('#articles').html(loaderImage);
+    //$('#extra').html(loaderImage);
 
     //XML ACTIONS
     //read XML: ARTICLES & BOOKS
