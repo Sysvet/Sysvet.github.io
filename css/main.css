@@ -52,6 +52,15 @@
 		display: inline;
 	}
 	
+	/* News window*/
+	#news{
+		margin-top: -30px;
+		padding-bottom: 70px;
+	}
+	#news-publishing-date{
+		font-size: 9pt;
+	}
+	
 	/* custom LESS links */
 	.dark-bkg-container h3{
 		color: #62ADC4;

@@ -82,7 +82,18 @@
         </div>
 		
 		<!-- news to be posted here -->
-		
+		<div id="news">
+			<div class="container">
+				<h2 class="text-center">Nyheter på sidan</h2>
+				<p>Robert C. Martins föreläsning om <a href="http://en.wikipedia.org/wiki/Single_responsibility_principle" target="_blank"><i>"Single Responsibility Principle"</i></a>. Föreläsningen tar upp teorin, problematik och praktik bakom regeln om relationer och kodstruktur.</p>
+				<br/>
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="//www.youtube.com/embed/Gt0M_OHKhQE" frameborder="0" allowfullscreen></iframe>
+                </div>
+				<br/>
+				<p id="news-publishing-date">Publicerades: 2015-05-17</p>
+			</div>
+		</div>
 		<!-- ---------------------- -->
 		
 		<div class="dark-bkg-container">
@@ -369,16 +380,16 @@
 			</div>
             <footer class="footer">
                 <p><div id="thisYear"></div>&nbsp;|&nbsp;<a href="https://github.com/Sysvet" target="_blank">https://github.com/Sysvet</a></p>
-                <p>-Made with Bootstrap-</p>
+                <p>-Made with <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>-</p>
             </footer>
         </div>
     </body>
+    <!-- later script loading for users delight -->
 	<script>
 		var d = new Date();
 		var n = d.getFullYear();
 		document.getElementById("thisYear").innerHTML = "<span title='copyright' class='glyphicon glyphicon-copyright-mark'></span>&nbsp;"+"2014-"+n;
 	</script>
-    <!-- later script loading for users delight -->
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
