@@ -368,11 +368,16 @@
 				</table>
 			</div>
             <footer class="footer">
-                <p><span title="copyright" class="glyphicon glyphicon-copyright-mark"></span>&nbsp;2014-2015&nbsp;|&nbsp;<a href="https://github.com/Sysvet" target="_blank">https://github.com/Sysvet</a></p>
+                <p><div id="thisYear"></div>&nbsp;|&nbsp;<a href="https://github.com/Sysvet" target="_blank">https://github.com/Sysvet</a></p>
                 <p>-Made with Bootstrap-</p>
             </footer>
         </div>
     </body>
+	<script>
+		var d = new Date();
+		var n = d.getFullYear();
+		document.getElementById("thisYear").innerHTML = "<span title='copyright' class='glyphicon glyphicon-copyright-mark'></span>&nbsp;"+"2014-"+n;
+	</script>
     <!-- later script loading for users delight -->
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

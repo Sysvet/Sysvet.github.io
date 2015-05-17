@@ -47,6 +47,11 @@
 		color: #fff;
 	}
 	
+	/* date div */
+	#thisYear{
+		display: inline;
+	}
+	
 	/* custom LESS links */
 	.dark-bkg-container h3{
 		color: #62ADC4;
