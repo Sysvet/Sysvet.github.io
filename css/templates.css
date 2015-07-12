@@ -1,0 +1,8 @@
+@media screen{
+	.paper-template{
+		background: #FAFAFA;
+		border: 1px solid #D8D8D8;
+		padding: 10px;
+		border-radius: 3px;
+	}
+}

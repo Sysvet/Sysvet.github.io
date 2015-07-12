@@ -23,6 +23,10 @@ $(document).ready(function(){
         return false;
     });
 
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+
     //applying loading images from bootstrap to data GETs
     //$('#articles').html(loaderImage);
     //$('#extra').html(loaderImage);
@@ -96,6 +100,6 @@ function scrollToId(inId){
     var id = "#";
     id += inId;
     $('html,body').animate({
-            scrollTop: $(id).offset().top -60
+            scrollTop: $(id).offset().top -85
     }, 1000);
 }

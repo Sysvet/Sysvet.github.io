@@ -42,6 +42,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
         <!-- Custom CSS and JS -->
         <link href="../css/main.css" rel="stylesheet" type="text/css">
+        <link href="../css/templates.css" rel="stylesheet" type="text/css">
 	</head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -87,61 +88,97 @@
                 <ol class="tree">
                     <li class="tree-list"><a href="#" onclick="scrollToId('index')">Index</a></li>
                     <li class="tree-list"><a href="#" onclick="scrollToId('netbeans')">Netbeans</a>
-					<ol class="tree">
-						<li class="tree-list"><a href="#"  onclick="scrollToId('kortkommandon')">Kortkommandon</a></li>
-					</ol></li>
+					   <ol class="tree">
+						  <li class="tree-list"><a href="#"  onclick="scrollToId('kortkommandon')">Kortkommandon</a></li>
+					   </ol>
+                    </li>
                     <li class="tree-list"><a href="#" onclick="scrollToId('wamp')">WAMP Server</a></li>
-                    <li class="tree-list"><a href="#" onclick="scrollToId('grnwebdev')">Webutveckling</a></li>
+                    <li class="tree-list"><a href="#" onclick="scrollToId('grnwebdev')">Webutveckling</a>
+                    <ol class="tree">
+                        <li class="tree-list"><a href="#" onclick="scrollToId('webdev-notepadplusplus-head')">Notepad++</a></li>
+                        <li class="tree-list"><a href="#" onclick="scrollToId('webdev-sublime-head')">Sublime Text 2</a></li>
+                        <ol class="tree">
+                            <li class="tree-list"><a href="#" onclick="scrollToId('webdev-sublime-addons')">Addons och plugins</a></li>
+                        </ol>
+                    </ol>
+                    </li>
+                    <li class="tree-list"><a href="#" onclick="scrollToId('code-standard-head')">Kodstandard</a></li>
+                    <li class="tree-list"><a href="#" onclick="scrollToId('git-head')">Git</a></li>
                 </ol>
             </p>
         </div>
         <!-- the content -->
         <div class="container">
-            <h3 id="index">1 Index</h3>
-            <p>F&ouml;rst vill jag bara s&auml;ga ett par visdomsord</p>
-            <p>Alla era problem som ni kommer st&ouml;ta p&aring; g&aring;r att googla fram svaren p&aring;. <br/>
-            K&ouml;r ni fast, fr&aring;ga n&aring;gon, sno inte n&aring;gons kod rakt av f&ouml;r du kommer senare f&aring; lov att redovisa koden p&aring; ett eller annat s&auml;tt och har du inte uppfattat vad det &auml;r koden g&ouml;r s&aring; har du redan kastat in din handduk.<br/>
-                L&auml;s, upprepa, f&ouml;rst&aring;; att koda &auml;r att n&ouml;ta, att n&ouml;ta &auml;r att l&auml;ra.
-            </p>
+            <div class="paper-template">
+                <h3 id="index">1 Index</h3>
+                <p>F&ouml;rst vill jag bara s&auml;ga ett par visdomsord</p>
+                <p>Alla era problem som ni kommer st&ouml;ta p&aring; g&aring;r att googla fram svaren p&aring;. <br/>
+                K&ouml;r ni fast, fr&aring;ga n&aring;gon, sno inte n&aring;gons kod rakt av f&ouml;r du kommer senare f&aring; lov att redovisa koden p&aring; ett eller annat s&auml;tt och har du inte uppfattat vad det &auml;r koden g&ouml;r s&aring; har du redan kastat in din handduk.<br/>
+                    L&auml;s, upprepa, f&ouml;rst&aring;; att koda &auml;r att n&ouml;ta, att n&ouml;ta &auml;r att l&auml;ra.
+                </p>
+            </div>
             <br/>
             
-            <h3 id="netbeans">2 Netbeans</h3>
-			<!-- 
-				New items are added into the list unless it's a new topic. 
-				New topics are defined with <h4> elements.
-			-->
-			<h4 id="kortkommandon">2.1 Kortkommandon</h4>
-			<ul>
-				<li>
-					</p><i>sout</i> + <kbd>TAB</kbd><br/>
-					<samp>System.out.println("");</samp></p>
-				</li>
-				<br/>
-				<li>
-					<p>Auto-import: <kbd>CTRL + Spacebar</kbd><br/>
-					<i>Anv&ouml;nd detta direkt d&aring; du definerat en ny klass t.ex:</i><code>Random</code></p>
-				</li>
-				
-			</ul>
-			<p></p>
+            <div class="paper-template">
+                <h3 id="netbeans">2 Netbeans</h3>
+    			<!-- 
+    				New items are added into the list unless it's a new topic. 
+    				New topics are defined with <h4> elements.
+    			-->
+    			<h4 id="kortkommandon">2.1 Kortkommandon</h4>
+    			<ul>
+    				<li>
+    					</p><i>sout</i> + <kbd>TAB</kbd><br/>
+    					<samp>System.out.println("");</samp></p>
+    				</li>
+    				<br/>
+    				<li>
+    					<p>Auto-import: <kbd>CTRL + Spacebar</kbd><br/>
+    					<i>Anv&ouml;nd detta direkt d&aring; du definerat en ny klass t.ex:</i><code>Random</code></p>
+    				</li>
+    				
+    			</ul>
+    			<p></p>
+            </div>
             <br/>
             
-            <h3 id="wamp">3 Wamp Server</h3>
-            <p>Wamp Server &auml;r ett utomordentligt verktyg att s&auml;tta upp en server  hemma p&aring; sin egen dator med tillg&aring;ng till Apache Tomcat, MyPHPAdmin, och webhost. Allt placerat p&aring; servern publicerar s&aring;klart lokalt och inte publikt.</p>
-            <p>Det finns ett par problem som m&aring;nga nya anv&auml;ndare st&ouml;ter p&aring; direkt vid f&ouml;rsta anv&auml;ndningen av WAMP Server och det &auml;r att servern inte g&aring;r online, och att man inte vet vart man ska placera sina saker. H&auml;r nedan t&auml;nker jag reda ut hur man g&aring;r tillv&auml;ga p&aring; en dator med Windows som operativsystem. Anv&auml;nder du ett annat operativ s&aring; borde det vara ungef&auml;r lika, men om det inte &auml;r det, googla.</p>
-            <p>Om du st&ouml;ter p&aring; problemet med att din server inte g&aring;r online, s&aring; &auml;r det mest troligt p&aring; grund utav att du har Skype installerat och att Skype ligger och pratar p&aring; samma portnummer som WAMP. G&ouml;r f&ouml;ljande steg:</p>
+            <div class="paper-template">
+                <h3 id="wamp">3 Wamp Server</h3>
+                <p>Wamp Server &auml;r ett utomordentligt verktyg att s&auml;tta upp en server  hemma p&aring; sin egen dator med tillg&aring;ng till Apache Tomcat, MyPHPAdmin, och webhost. Allt placerat p&aring; servern publicerar s&aring;klart lokalt och inte publikt.</p>
+                <p>Det finns ett par problem som m&aring;nga nya anv&auml;ndare st&ouml;ter p&aring; direkt vid f&ouml;rsta anv&auml;ndningen av WAMP Server och det &auml;r att servern inte g&aring;r online, och att man inte vet vart man ska placera sina saker. H&auml;r nedan t&auml;nker jag reda ut hur man g&aring;r tillv&auml;ga p&aring; en dator med Windows som operativsystem. Anv&auml;nder du ett annat operativ s&aring; borde det vara ungef&auml;r lika, men om det inte &auml;r det, googla.</p>
+                <p>Om du st&ouml;ter p&aring; problemet med att din server inte g&aring;r online, s&aring; &auml;r det mest troligt p&aring; grund utav att du har Skype installerat och att Skype ligger och pratar p&aring; samma portnummer som WAMP. G&ouml;r f&ouml;ljande steg:</p>
+                <br/>
+                <h4>Steg 1</h4>
+                <img class="img-responsive" src="../img/pictures/wamp1.png"/>
+                <br/>
+                <br/>
+                <h4>Steg 2</h4>
+                <img class="img-responsive" src="../img/pictures/wamp2.png"/>
+                <br/>
+                <p>Ok, s&aring; nu har vi rett ut problemet med att servern inte g&aring;r online. Men nu till vart allt kan finnas och ska l&auml;ggas. Som vilken server som helst s&aring; finns en typ av "webfolder" eller "www-mapp", om man nu s&aring; vill, d&auml;r man l&auml;gger sina filer som ska representera ens hemsida eller tj&auml;nst.</p>
+            </div>
             <br/>
-            <h4>Steg 1</h4>
-            <img class="img-responsive" src="../img/pictures/wamp1.png"/>
+
+            <div class="paper-template">
+                <h3 id="grnwebdev">4 Webutveckling</h3>
+                <p></p>
+                <h4 id="webdev-notepadplusplus-head">4.1 Notepad++</h4>
+                <br/>
+                <h4 id="webdev-sublime-head">4.2 Sublime Text 2</h4>
+                <p></p>
+                <h5 id="webdev-sublime-addons">4.2.1 Addons och plugins</h5>
+                <p></p>
+            </div>
             <br/>
+
+            <div class="paper-template">
+                <h3 id="code-standard-head">5 Kodstandard</h3>
+            </div>
             <br/>
-            <h4>Steg 2</h4>
-            <img class="img-responsive" src="../img/pictures/wamp2.png"/>
-            <br/>
-            <p>Ok, s&aring; nu har vi rett ut problemet med att servern inte g&aring;r online. Men nu till vart allt kan finnas och ska l&auml;ggas. Som vilken server som helst s&aring; finns en typ av "webfolder" eller "www-mapp", om man nu s&aring; vill, d&auml;r man l&auml;gger sina filer som ska representera ens hemsida eller tj&auml;nst.</p>
-            
-            <h3 id="grnwebdev">4 Webutveckling</h3>
-            <p></p>
+
+            <div class="paper-template">
+                <h3 id="git-head">6 Git</h3>
+            </div>
             <br/>
         </div>
         <div class="container">

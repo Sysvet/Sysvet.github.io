@@ -60,7 +60,6 @@
                         <li class="active"><a href="./">Hem</a></li>
                         <li><a href="./tips/">Tips och Trix</a></li>
                         <li><a href="./movies/">Klipp och inspelningar</a></li>
-                        <li><a href="./test/">Test!</a></li>
                     </ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="https://github.com/sysvet/sysvet.github.io"><span class="glyphicon glyphicon-cloud"></span> GitHub</a></li>
@@ -69,7 +68,7 @@
             </div>
         </nav>
         <!-- scrollToTop button -->
-		<div class="btn btn-default btn-lg scrollToTop">
+		<div class="btn btn-default btn-lg scrollToTop" data-toggle="tooltip" data-placement="bottom" title="Scroll to top">
 			<span class="glyphicon glyphicon-chevron-up"></span>
 		</div>
         <!-- jumbotron -->
@@ -78,7 +77,7 @@
                 <h1>V&auml;lkommen!</h1>
                 <p>Du har antagligen precis klivit in genom d&ouml;rren och en helt ny v&auml;rd av sp&auml;nnande saker har v&auml;llts &ouml;ver dig!</p>
                 <p>Den h&auml;r sidan &auml;r h&auml;r f&ouml;r att hj&auml;lpa dig att komma ig&aring;ng med b&aring;de teknik och studier. S&aring; ta dig tiden att l&auml;sa igenom sidans innehåll.</p>
-                <p><a class="btn btn-info btn-lg" href="mailto:tobias.bulai@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Har du fr&aring;gor?</a></p>
+                <p><a class="btn btn-info btn-lg" href="mailto:tobias.bulai@gmail.com" data-toggle="tooltip" data-placement="right" title="So mail me maybe"><span class="glyphicon glyphicon-envelope"></span> Har du fr&aring;gor?</a></p>
             </div>
         </div>
 		
@@ -235,46 +234,56 @@
 						</tr>
 					</thead>
 					<tbody>
-					<!-- New material teplate: 
-					
-					<tr>
-						<td></td>
-						<td></td>
-						<td><a href="" target="_blank">Default Name Space</a></td>
-					</tr>
-					
-					-->
-					
-					<tr>
-						<td>WAMP Server</td>
-						<td>Server och lokal webhost</td>
-						<td><a href="http://www.wampserver.com/en/#download-wrapper" target="_blank">Bes&ouml;k Sida</a></td>
-					</tr>
-					<tr>
-						<td>XAMPP Server</td>
-						<td>Crossplatform Server och lokal webhost</td>
-						<td><a href="http://sourceforge.net/projects/xampp/" target="_blank">Bes&ouml;k Sida</a></td>
-					</tr>
-					<tr>
-						<td>Notepad++</td>
-						<td>Textredigerare med spr&aring;kmarkering</td>
-						<td><a href="http://notepad-plus-plus.org/" target="_blank">Bes&ouml;k Sida</a></td>
-					</tr>
-					<tr>
-						<td>WinSCP</td>
-						<td>FTP Klient (f&ouml;r att n&aring; skolans datorer hemmifr&aring;n)</td>
-						<td><a href="http://winscp.net/eng/index.php" target="_blank">Bes&ouml;k Sida</a></td>
-					</tr>
-					<tr>
-						<td>Violet UML</td>
-						<td>UML och diagram</td>
-						<td><a href="http://alexdp.free.fr/violetumleditor/page.php" target="_blank">Bes&ouml;k Sida</a></td>
-					</tr>
-					<tr>
-						<td>GitHub</td>
-						<td>Kollaborations och versioneringsverktyg</td>
-						<td><a href="https://github.com/" target="_blank">Bes&ouml;k Sida</a></td>
-					</tr>
+						<!-- New material teplate: 
+						
+						<tr>
+							<td></td>
+							<td></td>
+							<td><a href="" target="_blank">Default Name Space</a></td>
+						</tr>
+						
+						-->
+						
+						<tr>
+							<td>WAMP Server</td>
+							<td>Server och lokal webhost</td>
+							<td><a href="http://www.wampserver.com/en/#download-wrapper" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
+						</tr>
+						<tr>
+							<td>XAMPP Server</td>
+							<td>Crossplatform Server och lokal webhost</td>
+							<td><a href="http://sourceforge.net/projects/xampp/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
+						</tr>
+						<tr>
+							<td>Sublime Text</td>
+							<td>Textredigerare med spr&aring;kmarkering</td>
+							<td><a href="http://www.sublimetext.com/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
+						</tr>
+						<tr>
+							<td>Notepad++</td>
+							<td>Textredigerare med spr&aring;kmarkering</td>
+							<td><a href="http://notepad-plus-plus.org/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
+						</tr>
+						<tr>
+							<td>WinSCP</td>
+							<td>FTP Klient (f&ouml;r att n&aring; skolans datorer hemmifr&aring;n)</td>
+							<td><a href="http://winscp.net/eng/index.php" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
+						</tr>
+						<tr>
+							<td>Putty</td>
+							<td>Telnet Klient</td>
+							<td><a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
+						</tr>
+						<tr>
+							<td>Violet UML</td>
+							<td>UML och diagram</td>
+							<td><a href="http://alexdp.free.fr/violetumleditor/page.php" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
+						</tr>
+						<tr>
+							<td>GitHub</td>
+							<td>Kollaborations och versioneringsverktyg</td>
+							<td><a href="https://github.com/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
@@ -302,79 +311,79 @@
 						-->
 						<tr>
 							<td>MS DreamSpark Gratis Program (logga in med skolanv&auml;ndare)</td>
-							<td><a href="http://e5.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?ws=52580b26-836f-e011-971f-0030487d8897&vsro=8&pc=edea8820-dc29-e011-b71d-0030487d8897" target="_blank">http://e5.onthehub.com</a></td>
+							<td><a href="http://e5.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?ws=52580b26-836f-e011-971f-0030487d8897&vsro=8&pc=edea8820-dc29-e011-b71d-0030487d8897" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></td>
 						</tr>
 						<tr>
 							<td>Dropbox</td>
-							<td><a href="https://www.dropbox.com/" target="_blank">https://www.dropbox.com/</a></td>
+							<td><a href="https://www.dropbox.com/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>Google Documents</td>
-							<td><a href="https://docs.google.com" target="_blank">https://docs.google.com</a></td>
+							<td><a href="https://docs.google.com" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>MS Word Online</td>
-							<td><a href="https://office.live.com/start/Word.aspx" target="_blank">https://office.live.com</a></td>
+							<td><a href="https://office.live.com/start/Word.aspx" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>Lucidchart (Chrome extension)</td>
-							<td><a href="https://www.lucidchart.com" target="_blank">https://www.lucidchart.com</a></td>
+							<td><a href="https://www.lucidchart.com" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>JQuery Tricks (ajax)</td>
-							<td><a href="http://css-tricks.com/snippets/jquery/" target="_blank">http://css-tricks.com</a></td>
+							<td><a href="http://css-tricks.com/snippets/jquery/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>W3Schools</td>
-							<td><a href="http://www.w3schools.com/" target="_blank">http://www.w3schools.com/</a></td>
+							<td><a href="http://www.w3schools.com/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>Bootstrap</td>
-							<td><a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a></td>
+							<td><a href="http://getbootstrap.com/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>Bootstrap for JSF2</td>
-							<td><a href="http://www.bootsfaces.net/" target="_blank">http://www.bootsfaces.net/</a></td>
+							<td><a href="http://www.bootsfaces.net/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>HTML Validator</td>
-							<td><a href="http://validator.w3.org/" target="_blank">http://validator.w3.org/</a></td>
+							<td><a href="http://validator.w3.org/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>CSS Validator</td>
-							<td><a href="http://jigsaw.w3.org/css-validator/" target="_blank">http://css-validator/</a></td>
+							<td><a href="http://jigsaw.w3.org/css-validator/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>HTML Color Codes</td>
-							<td><a href="http://html-color-codes.info/" target="_blank">http://html-color-codes</a></td>
+							<td><a href="http://html-color-codes.info/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>Angular JS</td>
-							<td><a href="https://angularjs.org/" target="_blank">https://angularjs.org/</a></td>
+							<td><a href="https://angularjs.org/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>Learn Apache POI HSSF</td>
-							<td><a href="http://www.developer.com/lang/article.php/10924_3792296_2/Reading-Excel-Files-with-Apache-POI-HSSF.htm" target="_blank">http://www.developer.com</a></td>
+							<td><a href="http://www.developer.com/lang/article.php/10924_3792296_2/Reading-Excel-Files-with-Apache-POI-HSSF.htm" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>Pastebin</td>
-							<td><a href="http://pastebin.com/" target="_blank">http://pastebin.com/</a></td>
+							<td><a href="http://pastebin.com/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>JSFiddle</td>
-							<td><a href="http://jsfiddle.net/" target="_blank">http://jsfiddle.net/</a></td>
+							<td><a href="http://jsfiddle.net/" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>Reddit: Learn Programming</td>
-							<td><a href="https://www.reddit.com/r/learnprogramming" target="_blank">/r/learnprogramming</a></td>
+							<td><a href="https://www.reddit.com/r/learnprogramming" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>Reddit: Java Help</td>
-							<td><a href="https://www.reddit.com/r/javahelp/" target="">/r/javahelp/</a></td>
+							<td><a href="https://www.reddit.com/r/javahelp/" target=""><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 						<tr>
 							<td>Wasabeef's Awesome Android UI/UX</td>
-							<td><a href="https://github.com/wasabeef/awesome-android-ui" target="_blank">awesome-android-ui</a></td>
+							<td><a href="https://github.com/wasabeef/awesome-android-ui" target="_blank"><div class="btn btn-info btn-sm"><span class="glyphicon glyphicon-link"></span></div></a></td>
 						</tr>
 					</tbody>
 				</table>
