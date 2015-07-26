@@ -40,6 +40,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <!-- Googles' Prettify CSS Plugin -->
+        <link rel="stylesheet" href="../css/google-prettify/prettify.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="../css/allowLineNumbers.css">
         <!-- Custom CSS and JS -->
         <link href="../css/main.css" rel="stylesheet" type="text/css">
         <link href="../css/templates.css" rel="stylesheet" type="text/css">
@@ -89,7 +92,7 @@
                     <li class="tree-list"><a href="#" onclick="scrollToId('index')">Index</a></li>
                     <li class="tree-list"><a href="#" onclick="scrollToId('netbeans')">Netbeans</a>
 					   <ol class="tree">
-						  <li class="tree-list"><a href="#"  onclick="scrollToId('kortkommandon')">Kortkommandon</a></li>
+						  <li class="tree-list"><a href="#" onclick="scrollToId('nb-shortcuts')">Kortkommandon</a></li>
 					   </ol>
                     </li>
                     <li class="tree-list"><a href="#" onclick="scrollToId('wamp')">WAMP Server</a></li>
@@ -125,7 +128,7 @@
     				New items are added into the list unless it's a new topic. 
     				New topics are defined with <h4> elements.
     			-->
-    			<h4 id="kortkommandon">2.1 Kortkommandon</h4>
+    			<h4 id="nb-shortcuts">2.1 Kortkommandon</h4>
     			<ul>
     				<li>
     					</p><i>sout</i> + <kbd>TAB</kbd><br/>
@@ -139,6 +142,7 @@
     				
     			</ul>
     			<p></p>
+                <br/>
             </div>
             <br/>
             
@@ -173,6 +177,63 @@
 
             <div class="paper-template">
                 <h3 id="code-standard-head">5 Kodstandard</h3>
+                <p>Kodstandard är något som är väldigt viktigt inom utveckling. Tyvärr är det många soms truntar i kodstandard vilket kan generera förvirring hos andra utvecklare som jobbar med samma system eller för utvecklare som vidareutvecklar ett system efter leverans. Anledningen till att det kan och mycket troligt kommer skapa förvirring är för att kod utan en industri standard i upplägg kan bli svårläst eller oläsbart.</p>
+                <p>Så vad är egentligen kodstandard?<br/>
+                Kodstandard är ett visst sätt att ställa upp koden på så att andra utvecklare kan med enkelhet läsa av koden. Ett exempel; I Sverige så kör vi bil på höger sida av vägen, men kommer vi till England och vill köra bil så blir det förvirring eller omöjligt att köra då de kör på den andra sidan av vägen.</p>
+                <p>Så det utvecklare gör är att sätta mellanslag, radbrytningar på vissa ställen för att dela upp koden för att göra den mer lättläslig. Sedan är det inte universellt att alla företag eller utvecklare har samma kodstandarder som de jobbar utifrån, men det är bra att ha en bas att stå på och att veta om det.</p>
+                <p>Här nedan är ett par exempel på kodstandarder i olika språk som man tillämpar och som du borde lära dig. För dig och andras skull.</p>
+                <br/>
+                <p><strong>Java</strong></p>
+                <pre class="pre-scrollable prettyprint linenums lang-java">
+public class ClassA {
+    public int number = 1;
+    private String letters[] = new String[]{"A", "B"};
+
+    public int math(String text, int number) {
+        if (text == null) {
+            text = "a";
+        } else if (text.length() == 0) {
+            text = "empty";
+        } else {
+            number++;
+        }
+
+        switch (number) {
+            case 1:
+                return math("text", 22);
+            case 2: 
+                return 2;
+            case 3: 
+                return -1;
+        }
+        return number;
+    }
+}
+                    </pre>
+                <br/>
+                <p><strong>PHP 5</strong></p>
+                <pre class="pre-scrollable prettyprint linenums lang-php">
+//Variables
+$x = 12;
+$y = 33;
+$response = array("Succes!", "Try again!");
+
+//if function is called in class, add Self::functionName()
+$answer = calc($x, $y);
+
+
+if ($_POST['answer'] === $answer) {
+    return $response[0];
+} 
+else {
+    return $response[1];
+}
+
+function calc ($var1, $var2) {
+    return ($var1 + $var2);
+}
+                </pre>
+                <br/>
             </div>
             <br/>
 
@@ -200,4 +261,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<!-- The sites' own main js-file -->
 	<script src="../js/main.js"></script>
+    <!-- Googles' Prettify CSS Plugin -->
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 </html>
