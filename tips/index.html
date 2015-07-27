@@ -64,6 +64,7 @@
                         <li><a href="../">Hem</a></li>
                         <li class="active"><a href="./">Tips och Trix</a></li>
                         <li><a href="../movies/">Klipp och inspelningar</a></li>
+                        <li><a href="../ny/">Ny Student?</a></li>
                     </ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="https://github.com/sysvet/sysvet.github.io"><span class="glyphicon glyphicon-cloud"></span> GitHub</a></li>
@@ -181,6 +182,7 @@
                 <p>Så vad är egentligen kodstandard?<br/>
                 Kodstandard är ett visst sätt att ställa upp koden på så att andra utvecklare kan med enkelhet läsa av koden. Ett exempel; I Sverige så kör vi bil på höger sida av vägen, men kommer vi till England och vill köra bil så blir det förvirring eller omöjligt att köra då de kör på den andra sidan av vägen.</p>
                 <p>Så det utvecklare gör är att sätta mellanslag, radbrytningar på vissa ställen för att dela upp koden för att göra den mer lättläslig. Sedan är det inte universellt att alla företag eller utvecklare har samma kodstandarder som de jobbar utifrån, men det är bra att ha en bas att stå på och att veta om det.</p>
+                <p>En gyllene regel gällande att skriva kod är att även skriva allt på engelska, även dina kommentarer. Men nu i skolan kan det vara lättare för dig och lärare att ha kommentarer på svenska. Men <strong><u>HÅLL DIG TILL ENGELSKA I KODEN!!!</u></strong></p>
                 <p>Här nedan är ett par exempel på kodstandarder i olika språk som man tillämpar och som du borde lära dig. För dig och andras skull.</p>
                 <br/>
                 <p><strong>Java</strong></p>
@@ -209,7 +211,7 @@ public class ClassA {
         return number;
     }
 }
-                    </pre>
+</pre>
                 <br/>
                 <p><strong>PHP 5</strong></p>
                 <pre class="pre-scrollable prettyprint linenums lang-php">
@@ -232,7 +234,31 @@ else {
 function calc ($var1, $var2) {
     return ($var1 + $var2);
 }
-                </pre>
+</pre>
+                <br/>
+                <p>Kodstandard förekommer även i hur du ska skriva variabler, metoder/funktioner och klasser. Detta för att än en gång; göra det enklare för andra utvecklare och dig själv att identifiera, förstå och läsa på ett bra och enkelt sätt.</p>
+                <br/>
+                <p><strong>Ett par exempel i Java</strong></p>
+                <pre class="pre-scrollable prettyprint linenums lang-java">
+//Comments/Documentation: are always preferable in English
+//Code: is always typed in English. ALWAYS!!!
+
+//Tiny letters for variables
+String simpleTextVariable = "x";
+int integerValue = 1;
+
+//Big letters if a Class
+public Class SimpleClass {
+
+    /*Method/Function names begin with small letters and use caps when starting a new word.*/
+    private int[] getVariablesInMethod() {
+        /*Same as variables; array variables begin with small letters.*/
+        int[] arrayOfItems = {1, 2, 3};
+        return arrayOfItems;
+    }
+    
+}
+</pre>
                 <br/>
             </div>
             <br/>
